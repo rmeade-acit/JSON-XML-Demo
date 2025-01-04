@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Student Directory</h1>
+            <nav>
+                <button onclick="loadXMLData()">Load XML Data</button>
+                <button onclick="loadJSONData()">Load JSON Data</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="studentList">
+                <h2>Student Information</h2>
+                <div class="data-source">Current Source: <span id="dataSource">None</span></div>
+                <div class="students-container" id="studentsContainer">
+                    <!-- Student cards will be inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Example website demonstrating XML and JSON data loading</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
